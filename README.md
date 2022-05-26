@@ -16,3 +16,14 @@
 6.生成前后文档对比，保留原始文档格式
 
  ![Alt](app/images/res.png)
+
+7.安装步骤：
+
+ 前提： 已安装 compoer 2 和php7.4环境，推荐使用 phpstudy 或者 laragon 集成环境
+
+ git clone 代码到本地，根目录下执行 
+```cmd
+ composer install -vvv 
+```
+
+##不要切换国内镜像！否则找不到包
