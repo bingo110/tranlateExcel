@@ -42,6 +42,7 @@ foreach ($spreadsheet->getWorksheetIterator() as $worksheet) {
             }
         }
     }
+    //每个单元格都调用api效果不好，改成每个sheet所有文字调用一次api，根据数组下标匹配翻译之后的单元格内容
     $newStrArr = $helper->autoTozh($worksheetAllStr);
     foreach ($newStrArr as $k => $value) {
         $value['dst'] = str_replace('@o@', PHP_EOL, $value['dst']);//换行符还原
